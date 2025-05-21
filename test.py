@@ -1,5 +1,5 @@
 import unittest
-from red_black_priority import RedBlackTreePriorityQueue
+from red_black_priority_queue import RedBlackTreePriorityQueue
 
 class TestRedBlackPriorityQueue(unittest.TestCase):
     def setUp(self):
