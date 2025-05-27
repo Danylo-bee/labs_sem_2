@@ -68,15 +68,6 @@ def min_distanse(edges):
 
     return total_weight, mst
 
-
-def print_tree(mst):
-    graph = {}
-    for weight, u, v in mst:
-        graph.setdefault(u, []).append((v, weight))
-        graph.setdefault(v, []).append((u, weight))
-
-    visited = set()
-
     def dfs(node, prefix="", is_last=True):
         if prefix == "":
             print(node)
